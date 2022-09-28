@@ -17,6 +17,5 @@ use App\Http\Controllers\ProductController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('filters', [ProductController::class, 'filterProducts'])->name('/filters');
 
-
-Route::get('/filters' , [PostController::class , 'filterProducts'])->name('filters');
